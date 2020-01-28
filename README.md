@@ -7,8 +7,4 @@ java -D'webdriver.chrome.driver=.\chromedriver.exe' -jar .\selenium-server-stand
 java -jar .\line-crawler-0.0.1-SNAPSHOT.jar
 ```
 
-자세한건
-
-https://github.com/seolminsu90/line-crawler/blob/master/README.md
-
-를 참조해주세요.
+구동에 필요한 static 파일들 정보
