@@ -100,3 +100,8 @@ java -jar xxx...
 ### 기타 - 깃허브 연동 및 자동배포 참고
 
 https://kutar37.tistory.com/entry/Jenkins-Github-%EC%97%B0%EB%8F%99-%EC%9E%90%EB%8F%99%EB%B0%B0%ED%8F%AC-3
+
+
+### 기타 - 깃허브 태그 기준으로 빌드(Versioning)
+
+https://blog.tophoon.com/2018/03/24/setup-git-parameter-plugin-to-jenkins.html
