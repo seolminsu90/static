@@ -1,1 +1,18 @@
-
+server:
+  port: 8101
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8889/eureka/
+spring:
+  application:
+    name: toy-item
+  h2:
+    console:
+      enabled: true  
+      path: /item
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:file:~/Develop/Github/SpringBlogExam/item;AUTO_SERVER=TRUE
+    username: test
+    password: 1234
