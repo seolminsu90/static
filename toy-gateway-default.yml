@@ -7,10 +7,15 @@ server:
 spring:
   application:
     name: toy-gateway
-  cloud:
-    gateway:
-      routes:
-      - id: toy-order
-        uri: localhost:8100
-        predicates: 
-        - Path=/orders
+	cloud:
+		gateway:
+		  routes:
+		  - id: toy-order
+			uri: localhost:8100
+			predicates:
+			- Path=/orders
+			filters:
+			- name: Hystrix
+				args:
+				  name: hystrix
+				  fallbackUri: forward:/fallback/first
