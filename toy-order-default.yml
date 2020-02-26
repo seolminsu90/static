@@ -1,10 +1,10 @@
 server:
   port: 8100
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8889/eureka/
 spring:
-  eureka:
-    client:
-      serviceUrl:
-        defaultZone: http://localhost:8889/eureka/
   application:
     name: toy-order
   h2:
