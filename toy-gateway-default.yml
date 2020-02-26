@@ -14,8 +14,3 @@ spring:
               uri: localhost:8100
               predicates:
               - Path=/orders
-              filters:
-              - name: Hystrix
-                  args:
-                    name: hystrix
-                    fallbackUri: forward:/fallback/first
