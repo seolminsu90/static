@@ -5,6 +5,8 @@ spring:
     client:
       serviceUrl:
         defaultZone: http://localhost:8889/eureka/
+  application:
+    name: toy-order
   h2:
     console:
       enabled: true  
