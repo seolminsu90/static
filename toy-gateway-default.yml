@@ -1,1 +1,10 @@
-
+server:
+  port: 8000
+spring:
+  application:
+    name: toy-gateway
+  cloud:
+    gateway:
+      routes:
+      - id: toy-order
+        uri: localhost:8100
