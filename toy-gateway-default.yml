@@ -15,7 +15,7 @@ spring:
         predicates:
         - Path=/orders/**
         filters:
-			  - name: Hystrix
-				    args:
-				      name: hystrix
-				      fallbackUri: forward:/fallback/error
+        - name: Hystrix
+            args:
+              name: hystrix
+              fallbackUri: forward:/fallback/error
