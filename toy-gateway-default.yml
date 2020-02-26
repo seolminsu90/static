@@ -3,6 +3,10 @@ server:
 spring:
   application:
     name: toy-gateway
+  eureka:
+    client:
+      serviceUrl:
+        defaultZone: http://localhost:8889/eureka/
   cloud:
     gateway:
       routes:
