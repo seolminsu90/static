@@ -8,3 +8,5 @@ spring:
       routes:
       - id: toy-order
         uri: localhost:8100
+        predicates: 
+        - Path=/orders
