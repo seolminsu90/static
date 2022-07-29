@@ -53,7 +53,7 @@ export default {
       }
     };
   },
-  mounted() {
+  created() {
     if (this.rows.length == 0)
       return
 
