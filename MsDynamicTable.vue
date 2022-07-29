@@ -21,7 +21,7 @@
 
 <script>
 export default {
-  name: 'DynamicTable',
+  name: 'MsDynamicTable',
   props: {
     rows: {
       type: Array
