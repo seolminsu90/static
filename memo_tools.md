@@ -23,6 +23,8 @@
   - vue
 - visual studio code
 - notepad ++
+- intellij
+- mremoteng
 
 ### memo
 
