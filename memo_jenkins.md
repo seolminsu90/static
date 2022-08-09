@@ -103,6 +103,7 @@ Pipeline Syntax 덕분에 손쉽게 구성 가능함
 직렬/병렬 전부 가능하다.
 
 ```
+// 여러 잡을 순차적으로 처리하는 예시
 pipeline {
     agent any
     
