@@ -96,6 +96,47 @@ mvn clean package -DskipTests=true...
 java -jar xxx...
 ```
 
+### 파이프라인
+
+Pipeline Syntax 덕분에 손쉽게 구성 가능함
+
+직렬/병렬 전부 가능하다.
+
+```
+pipeline {
+    agent any
+    
+    parameters {
+        choice(
+            name: 'ResourceVersion',
+            choices: ['one', 'two', 'three'],
+            description: '선택형 인자1' 
+        )
+        choice(
+            name: 'BuildVersion',
+            choices: ['one2', 'two2', 'three2'],
+            description: '선택형 인자2' 
+        )
+    }
+    
+    stages {
+        stage('Resource Step') {
+            steps {
+                // 잡 이름 TestJob2, 파라미터 매개변수 명 job2Version, 대입되는 매개변수는 선택형인자1인 ResourceVersion
+                build job: 'TestJob2', parameters: [ string(name: 'job2Version', value: "${params.ResourceVersion}") ]
+            }
+        }
+        stage('Build Step') {
+            steps {
+                build job: 'TestJob1', parameters: [ string(name: 'job1Version', value: "${params.BuildVersion}") ]
+            }
+        }
+    }
+}
+
+
+```
+
 
 ### 기타 - 깃허브 연동 및 자동배포 참고
 
