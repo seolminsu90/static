@@ -22,6 +22,17 @@ body {
     background-color: red;
 }
 
+.x-button {
+    width: 1.2rem;
+    height: 1.2rem;
+    cursor: pointer;
+    margin: 0.3rem;
+}
+.x-button:hover {
+    color: rgb(223, 82, 0);
+}
+
+
 /*슬라이더*/
 .slider-container {
     position: relative;
