@@ -18,20 +18,16 @@ body {
     page-break-after: always; /* 페이지 끝날 때마다 개행 */
 }
 
-.hidden-page {
-    background-color: red;
-}
-
 .x-button {
     width: 1.2rem;
     height: 1.2rem;
     cursor: pointer;
     margin: 0.3rem;
+    display:none;
 }
 .x-button:hover {
     color: rgb(223, 82, 0);
 }
-
 
 /*슬라이더*/
 .slider-container {
@@ -76,4 +72,23 @@ body {
 
 .next-button {
     right: 10px;
+}
+
+/* 히든 */
+.hidden-command {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width:100px;
+    height:50px;
+}
+
+.hidden-command p {
+    display:none;
+    font-size:0.7rem;
+    color:red;
+    font-weight: bold;
+    line-height:50px;
+    text-align: center;
+    cursor:pointer;
 }
