@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 210mm; /* A4 가로 너비 */
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+.page {
+    width: 100%;
+    height: 297mm; /* A4 세로 높이 */
+    padding: 20px;
+    background-color: #f1f1f1;
+    page-break-after: always; /* 페이지 끝날 때마다 개행 */
+}
+
+.hidden-page {
+    background-color: red;
+}
+
+/*슬라이더*/
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <title>My A4 Web Page</title>
+        <link
+            rel="stylesheet"
+            href="./style.css" />
+    </head>
+    <body>
+        <div class="page">
+            <!-- 1번 페이지의 콘텐츠 -->
+            <div class="slider-container slider-container-1">
+                <div class="slider slider-1">
+                    <div class="slide">
+                        <img
+                            src="https://www.shutterstock.com/image-vector/short-custom-urls-url-shortener-600w-2233924609.jpg"
+                            alt="Slide 1" />
+                    </div>
+                    <div class="slide">
+                        <img
+                            src="https://www.shutterstock.com/image-vector/short-custom-urls-url-shortener-600w-2233924609.jpg"
+                            alt="Slide 2" />
+                    </div>
+                    <div class="slide">
+                        <img
+                            src="https://www.shutterstock.com/image-vector/short-custom-urls-url-shortener-600w-2233924609.jpg"
+                            alt="Slide 3" />
+                    </div>
+                </div>
+                <div class="prev-button prev-button-1">&#8249;</div>
+                <div class="next-button next-button-1">&#8250;</div>
+            </div>
+
+            <div class="slider-container slider-container-2">
+                <div class="slider slider-2">
+                    <div class="slide">
+                        <img
+                            src="https://www.shutterstock.com/image-vector/short-custom-urls-url-shortener-600w-2233924609.jpg"
+                            alt="Slide 1" />
+                    </div>
+                    <div class="slide">
+                        <img
+                            src="https://www.shutterstock.com/image-vector/short-custom-urls-url-shortener-600w-2233924609.jpg"
+                            alt="Slide 2" />
+                    </div>
+                    <div class="slide">
+                        <img
+                            src="https://www.shutterstock.com/image-vector/short-custom-urls-url-shortener-600w-2233924609.jpg"
+                            alt="Slide 3" />
+                    </div>
+                </div>
+                <div class="prev-button prev-button-2">&#8249;</div>
+                <div class="next-button next-button-2">&#8250;</div>
+            </div>
+            <button
+                class="hidden-page-button"
+                id="hidden-page-button-1">
+                1페이지의 숨김
+            </button>
+        </div>
+        <div
+            class="page hidden-page"
+            id="hidden-page-1"
+            hidden>
+            <h2
+                class="hidden-page-title"
+                style="color: red">
+                1페이지의 숨겨진 페이지
+            </h2>
+            <!-- 1페이지의 숨겨진 페이지의 콘텐츠 -->
+        </div>
+        <div class="page">
+            <!-- 2번 페이지의 콘텐츠 -->
+            <button
+                class="hidden-page-button"
+                id="hidden-page-button-2">
+                2페이지의 숨김
+            </button>
+        </div>
+        <div
+            class="page hidden-page"
+            id="hidden-page-2"
+            hidden>
+            <h2
+                class="hidden-page-title"
+                style="color: blue">
+                2페이지의 숨겨진 페이지
+            </h2>
+            <!-- 2페이지의 숨겨진 페이지의 콘텐츠 -->
+        </div>
+        <div class="page">
+            <!-- 3번 페이지의 콘텐츠 -->
+            <button
+                class="hidden-page-button"
+                id="hidden-page-button-3">
+                3페이지의 숨김
+            </button>
+        </div>
+        <div
+            class="page hidden-page"
+            id="hidden-page-3"
+            hidden>
+            <h2
+                class="hidden-page-title"
+                style="color: green">
+                3페이지의 숨겨진 페이지
+            </h2>
+            <!-- 3페이지의 숨겨진 페이지의 콘텐츠 -->
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
