@@ -8,3 +8,4 @@
 - print mode 제공(모든 버튼류 삭제)
 - 링크만으로 제공하기도 하니까 param 처리하기 (기본: 전부숨김, 특정 hash: 특정 처리)
   - ex) xxxx.com?hash=WEFWBOPEREWR... mode=pot... career... 
+  - unique한 class 구분해서 array로 관리후 show 처리로 관리하기
