@@ -9,12 +9,16 @@
         <link
             rel="stylesheet"
             href="./style.css" />
+        <link
+            rel="stylesheet"
+            href="./graph.css" />
     </head>
     <body>
-        <div class="page">
-            <div class="content">
-                Content 1
-                <div class="x-button">
+        <div class="page-wrap">
+            <div
+                class="page"
+                id="ms-career">
+                <div class="x-button parent-x-button">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
@@ -35,10 +39,41 @@
                             y2="18" />
                     </svg>
                 </div>
+                <div class="section-career">
+                    <p class="title">하하하하</p>
+                </div>
+                <div>
+                    <div class="x-button parent-x-button">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <line
+                                x1="18"
+                                y1="6"
+                                x2="6"
+                                y2="18" />
+                            <line
+                                x1="6"
+                                y1="6"
+                                x2="18"
+                                y2="18" />
+                        </svg>
+                    </div>
+                    <div
+                        class="graph"
+                        id="graph"></div>
+                </div>
             </div>
-            <div class="content">
-                Content 2
-                <div class="x-button">
+            <div class="line"></div>
+            <div
+                class="page"
+                id="ms-portpolio">
+                <div class="x-button parent-x-button">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
@@ -59,103 +94,45 @@
                             y2="18" />
                     </svg>
                 </div>
+                <p class="title">주요프러젝뜨</p>
+                <div class="portpolio-top-wrap"></div>
             </div>
-            <div class="content">
-                Content 3
-                <div class="x-button">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <line
-                            x1="18"
-                            y1="6"
-                            x2="6"
-                            y2="18" />
-                        <line
-                            x1="6"
-                            y1="6"
-                            x2="18"
-                            y2="18" />
-                    </svg>
-                </div>
-            </div>
-            <!-- 1번 페이지의 콘텐츠 -->
-            <div class="slider-container slider-container-1">
-                <div class="slider slider-1">
-                    <div class="slide">
-                        <img
-                            src="https://www.shutterstock.com/image-vector/short-custom-urls-url-shortener-600w-2233924609.jpg"
-                            alt="Slide 1" />
-                    </div>
-                    <div class="slide">
-                        <img
-                            src="https://www.shutterstock.com/image-vector/short-custom-urls-url-shortener-600w-2233924609.jpg"
-                            alt="Slide 2" />
-                    </div>
-                    <div class="slide">
-                        <img
-                            src="https://www.shutterstock.com/image-vector/short-custom-urls-url-shortener-600w-2233924609.jpg"
-                            alt="Slide 3" />
-                    </div>
-                </div>
-                <div class="prev-button prev-button-1">&#8249;</div>
-                <div class="next-button next-button-1">&#8250;</div>
-            </div>
+            <div class="line"></div>
 
-            <div class="slider-container slider-container-2">
-                <div class="slider slider-2">
-                    <div class="slide">
-                        <img
-                            src="https://www.shutterstock.com/image-vector/short-custom-urls-url-shortener-600w-2233924609.jpg"
-                            alt="Slide 1" />
-                    </div>
-                    <div class="slide">
-                        <img
-                            src="https://www.shutterstock.com/image-vector/short-custom-urls-url-shortener-600w-2233924609.jpg"
-                            alt="Slide 2" />
-                    </div>
-                    <div class="slide">
-                        <img
-                            src="https://www.shutterstock.com/image-vector/short-custom-urls-url-shortener-600w-2233924609.jpg"
-                            alt="Slide 3" />
-                    </div>
+            <div
+                class="page"
+                id="ms-career-text">
+                <div class="x-button parent-x-button">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <line
+                            x1="18"
+                            y1="6"
+                            x2="6"
+                            y2="18" />
+                        <line
+                            x1="6"
+                            y1="6"
+                            x2="18"
+                            y2="18" />
+                    </svg>
                 </div>
-                <div class="prev-button prev-button-2">&#8249;</div>
-                <div class="next-button next-button-2">&#8250;</div>
+                <p class="title">기간별 ㄱㄹ</p>
+                <div class="career-periods"></div>
             </div>
-        </div>
-        <div class="page">
-            <!-- 2번 페이지의 콘텐츠 -->
-            <button
-                class="hidden-page-button"
-                type="button">
-                히든쇼
-            </button>
-        </div>
-
-        <div
-            class="page hidden-page"
-            id="hidden-page-2"
-            hidden>
-            <h2
-                class="hidden-page-title"
-                style="color: blue">
-                2페이지의 숨겨진 페이지
-            </h2>
-            <!-- 2페이지의 숨겨진 페이지의 콘텐츠 -->
-        </div>
-        <div class="page">
-            <!-- 3번 페이지의 콘텐츠 -->
+            <div class="line"></div>
         </div>
 
         <div class="hidden-command">
             <p class="management-mode">관리모드</p>
         </div>
+        <script src="data.js"></script>
         <script src="script.js"></script>
     </body>
 </html>

@@ -1,0 +1,75 @@
+.graph {
+    width: 100%;
+    height: 120px;
+    position: relative;
+    border-bottom: 1px solid #000;
+}
+
+.area {
+    position: absolute;
+    width: 100%;
+    opacity: 0.5;
+}
+
+.area:nth-of-type(1) {
+    background-color: red;
+}
+
+.area:nth-of-type(2) {
+    background-color: blue;
+}
+
+.area:nth-of-type(3) {
+    background-color: green;
+}
+
+.area:nth-of-type(4) {
+    background-color: rgb(216, 36, 201);
+}
+
+.area:nth-of-type(5) {
+    background-color: orange;
+}
+
+.area {
+    border-left: 1px solid rgb(0, 0, 0);
+}
+.area p {
+    position: absolute;
+    top: -30px;
+    left: -1px;
+    height: 31px;
+    font-size: 11px;
+    text-indent: 1px;
+    border-left: 1px solid rgb(0, 0, 0);
+}
+
+@media print {
+    .area {
+        position: absolute;
+        width: 100%;
+        opacity: 1 !important;
+        filter: opacity(1) !important;
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+    }
+    .area:nth-of-type(1) {
+        background-color: rgb(255, 113, 113);
+    }
+
+    .area:nth-of-type(2) {
+        background-color: rgb(119, 119, 253);
+    }
+
+    .area:nth-of-type(3) {
+        background-color: rgb(95, 199, 95);
+    }
+
+    .area:nth-of-type(4) {
+        background-color: rgb(211, 100, 202);
+    }
+
+    .area:nth-of-type(5) {
+        background-color: rgb(230, 186, 105);
+    }
+}
